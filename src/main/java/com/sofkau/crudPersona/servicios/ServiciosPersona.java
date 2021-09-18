@@ -29,7 +29,7 @@ public class ServiciosPersona implements InterfasServiciosPersona {
 
     @Override
     public void borrar(int id) {
-
+        data.deleteById(id);
     }
 
     @Override

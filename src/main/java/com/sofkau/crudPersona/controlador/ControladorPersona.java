@@ -21,4 +21,9 @@ public class ControladorPersona {
         return servicio.guardar(persona);
     }
 
+    @PostMapping(value = "/borrarPersona")
+    public void guardarPersona(@RequestBody int id ){
+        servicio.borrar(id);
+    }
+
 }
