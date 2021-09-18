@@ -19,7 +19,7 @@ public class ServiciosPersona implements InterfasServiciosPersona {
 
     @Override
     public Persona listarPorId(int id) {
-        return null;
+        return data.findById(id).orElse(null);
     }
 
     @Override

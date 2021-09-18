@@ -31,4 +31,9 @@ public class ControladorPersona {
         return servicio.actualizar(persona);
     }
 
+    @PostMapping(value = "/buscarPersona")
+    public Persona buscarPersona(@RequestBody int id ){
+        return servicio.listarPorId(id);
+    }
+
 }
