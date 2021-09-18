@@ -34,6 +34,6 @@ public class ServiciosPersona implements InterfasServiciosPersona {
 
     @Override
     public Persona actualizar(Persona persona) {
-        return null;
+        return data.save(persona);
     }
 }

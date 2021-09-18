@@ -26,4 +26,9 @@ public class ControladorPersona {
         servicio.borrar(id);
     }
 
+    @PostMapping(value = "/actualizarPersona")
+    public Persona actualizarPersona(@RequestBody Persona persona ){
+        return servicio.actualizar(persona);
+    }
+
 }
